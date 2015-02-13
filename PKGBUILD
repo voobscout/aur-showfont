@@ -15,14 +15,14 @@ options=(!strip)
 
 build() {
   cd ${srcdir}/showfont-${pkgver}
-  msg "Configuring fslsfonts..."
+  msg "Configuring showfont..."
   ./configure --prefix=/usr
-  msg "Compiling XFS... "
+  msg "Compiling showfont... "
   make
 }
 
 package() {
-  msg "Installing fslsfonts"
+  msg "Installing showfont"
   cd ${srcdir}/showfont-${pkgver}
   make DESTDIR=${pkgdir} install
 }
