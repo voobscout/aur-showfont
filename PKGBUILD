@@ -6,7 +6,6 @@ pkgdesc="X Font Server - show font"
 arch=('i686' 'x86_64')
 license=('GPL2')
 makedepends=('git' 'pkg-config' 'autoconf' 'automake' 'gettext' 'xproto' 'xtrans' 'wget')
-#depends=('libfs')
 url="http://xorg.freedesktop.org/archive/individual/app"
 provides=('xorg-xfs-showfont')
 optdepends=('xorg-xfs' 'xorg-xfstt')
